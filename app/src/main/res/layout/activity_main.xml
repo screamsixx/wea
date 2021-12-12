@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242343"
+    tools:context=".MainActivity">
+
+    //pal icono
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherIcon"
+        android:src="@drawable/waitin"
+        android:layout_marginTop="80dp"></ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:layout_above="@id/cityFinder">
+        //temp
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:text="🌡️0*C"
+            android:textColor="#ffffff"
+            android:textSize="50sp"
+            android:textStyle="bold">
+        </TextView>
+        //condicion
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weatherCondition"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:text="..."
+            android:paddingStart="30sp">
+
+        </TextView>
+        //ciudad
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cityName"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:text="..."
+            android:textColor="#ffffff"
+            android:paddingStart="30sp">>
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/cityFinder"
+        android:layout_width="269dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/buttondesign">
+
+        <TextView
+            android:layout_width="44dp"
+            android:layout_height="62dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="114dp"
+            android:layout_marginBottom="7dp"
+            android:text="🔎"
+            android:textColor="#191818"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
